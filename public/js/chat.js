@@ -48,7 +48,7 @@ socket.on('message', (msg) => {
         username: msg.username
     })
     $messages.insertAdjacentHTML('beforeend', html)
-    autoScroll()
+    autoscroll()
 })
 
 
@@ -59,7 +59,7 @@ socket.on('locationMessage', (locMsg)=>{
         username:locMsg.username
     })
     $messages.insertAdjacentHTML('beforeend',locationHTML)
-    autoScroll()
+    autoscroll()
 })
 
 socket.on('roomData', ({room, users})=>{
